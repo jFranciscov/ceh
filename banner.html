@@ -24,7 +24,7 @@
 </style>
 <div class="banner-container">
 	<div class="banner" onclick="window.open('http://www.exploradoriesgos.cl','_blank')">
-		<div style="background-image: url('fondo_blanco.png'); height: 20px">
+		<div style="background-image: url('fondo_blanco.png'); height: 20px; border-radius: 5px;">
 			<img src="arrow.png" style="width: 10px; float: right; padding: 5px">
 		</div>
 		<div style="display: inline-block; width: 100%; height: 60px">
@@ -36,15 +36,25 @@
 					EXPLORA
 				</p>
 			</div>
-			<div style="float: left; width: 60%; background: green">
-				<!--<img src="http://exploradoriesgos.cl/img/noticias/taller_tig/3.png" style="height: 100%; width: 100%">-->
-				<img src="http://exploradoriesgos.cl/img/contenidos/territoriocam.jpg" style="height: 100%; width: 100%">
+			<div style="float: left; width: 60%; background: white">
+				<img id="mainImage" src="http://exploradoriesgos.cl/img/noticias/taller_tig/3.png" style="height: 100%; width: 100%">
 			</div>
 		</div>
-		<div style="padding: 10px; text-align: left; font-size: .8vw;">
+		<div style="padding: 10px; text-align: left; font-size: .8vw; background-image: url('fondo_blanco.png'); border-radius: 5px;">
 			Sistema de Información Territorial Online e Interactivo: Socio-ecosistemas Quebrada de Camiña y Chintaguay-Quisma
 		</div>
 	</div>
 </div>
+<script>
+var contadorImagen = 2;
+(function(){
+	setInterval(function(){
+		if(contadorImagen++%2 == 0)
+			mainImage.src = 'http://exploradoriesgos.cl/img/contenidos/territoriocam.jpg';
+		else
+			mainImage.src = 'http://exploradoriesgos.cl/img/noticias/taller_tig/3.png';
+	},2500);
+})();
+</script>
 </body>
 </html>
