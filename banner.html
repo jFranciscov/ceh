@@ -1,6 +1,50 @@
 <html>
 <head>
+	<meta charset="utf-8">
 </head>
 <body>
+<style>
+.banner-container{
+	width: 100%;
+}
+
+.banner{
+	margin: 0 auto;
+	width: 300px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px #e5e5e5;
+	text-align: center;
+}
+
+.banner:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+</style>
+<div class="banner-container">
+	<div class="banner" onclick="window.open('http://www.exploradoriesgos.cl','_blank')">
+		<div style="background-image: url('fondo_blanco.png'); height: 20px">
+			<img src="arrow.png" style="width: 10px; float: right; padding: 5px">
+		</div>
+		<div style="display: inline-block; width: 100%; height: 60px">
+			<div style="float: left; width: 40%; background-image: url('fondo_proyecto.png'); text-align: left; font-size: 1vw; height: 100%;">
+				<p style="padding-left: 15px; margin-bottom: 0; color: white; font-weight: bold">
+					PROYECTO
+				</p>
+				<p style="padding-left: 15px; margin-top: 0; color: #ffc51c; font-weight: bold"">
+					EXPLORA
+				</p>
+			</div>
+			<div style="float: left; width: 60%; background: green">
+				<!--<img src="http://exploradoriesgos.cl/img/noticias/taller_tig/3.png" style="height: 100%; width: 100%">-->
+				<img src="http://exploradoriesgos.cl/img/contenidos/territoriocam.jpg" style="height: 100%; width: 100%">
+			</div>
+		</div>
+		<div style="padding: 10px; text-align: left; font-size: .8vw;">
+			Sistema de Información Territorial Online e Interactivo: Socio-ecosistemas Quebrada de Camiña y Chintaguay-Quisma
+		</div>
+	</div>
+</div>
 </body>
 </html>
